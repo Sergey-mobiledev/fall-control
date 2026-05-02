@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fall.control.ui.home.alert_dialog.AlertDialogFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:background="@color/black_50"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee_spice_regular"
+            android:text="@string/status"
+            android:layout_marginTop="3.5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee_spice_regular"
+            android:text="@string/phone_fall"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/saturated_pink"
+            android:textSize="30sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/left_line"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/saturated_pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/layout_button_alert"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/left_line"
+            app:layout_constraintEnd_toEndOf="@id/left_line"
+            app:layout_constraintStart_toStartOf="@id/left_line" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/right_line"
+            app:layout_constraintEnd_toEndOf="@id/right_line"
+            app:layout_constraintStart_toStartOf="@id/right_line" />
+
+        <FrameLayout
+            android:id="@+id/layout_button_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_button_alert"
+            android:gravity="center"
+            android:paddingStart="3dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/right_line"
+            app:layout_constraintStart_toEndOf="@id/left_line">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/button_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_back_button_alert_small"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_alert" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/bungee_spice_regular"
+                    android:text="@string/alert"
+                    android:textColor="@color/saturated_pink"
+                    android:textSize="36sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/right_line"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/saturated_pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/layout_button_alert" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

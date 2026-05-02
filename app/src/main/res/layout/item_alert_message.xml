@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/check_box"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:clickable="false"
+        android:background="@drawable/selector_ic_checkbox_settings"
+        android:button="@null" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/alert_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="54dp"
+        android:text="dsadsadasdasdasdasdasdasd"
+        android:textAppearance="@style/Cera_pro_medium"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</FrameLayout>

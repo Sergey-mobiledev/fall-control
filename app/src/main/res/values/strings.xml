@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Fall Control</string>
+    <string name="start">Start</string>
+    <string name="i_acknowledge_and_accept_your">I acknowledge and accept your</string>
+    <string name="policy"><u>policy</u></string>
+    <string name="text_accept_our_terms">Before you continue, please accept our terms</string>
+    <string name="enter_text_or_use_predefined_options">Enter text or use predefined options:</string>
+    <string name="emergency_alert_a_sudden_fall_detected">Emergency Alert: A sudden fall detected!</string>
+    <string name="set">Set</string>
+    <string name="text_title_info">How application works:</string>
+    <string name="text_info">The app monitors sudden falls of the device using an accelerometer and reacts to high noise levels. It is designed to inform loved ones about a fall while climbing.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings:</string>
+    <string name="sound_level_meter">Sound level meter:</string>
+    <string name="accelerometer_tracking">Accelerometer tracking:</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="start_control">start control</string>
+    <string name="stop_control">stop control</string>
+    <string name="set_the_timer">Set the timer:</string>
+    <string name="colon">:</string>
+    <string name="turns_off_the_control_mode_when_the_timer_expires">Turns off the \"control mode\" when the timer expires.</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="examples_of_different_noise_levels">Examples of different noise levels:</string>
+    <string name="text_xyz_info_1">20 dB - a whisper\n40 dB - a quiet library\n60 dB - a conversation\n80 dB - loud music\n100 dB - a motorcycle\n120 dB - a rock concert ar a siren</string>
+    <string name="text_xyz_info_2">The accelerometer sensor measures constant (gravity), time-varying (vibrations), and quasi-static (tilt) acceleration forces, which affect the device along the three axes (x,y and z) in meters per second squared (m/s)</string>
+    <string name="how_accelerometer_works">How accelerometer works:</string>
+    <string name="text_record_audio_permission">Give permission to microphone</string>
+    <string name="m_s">m/s²</string>
+    <string name="null_accelerometer_value">=0.00m/s²</string>
+    <string name="history">History</string>
+    <string name="user">User</string>
+    <string name="end">End -</string>
+    <string name="start_">Start -</string>
+    <string name="fall">Fall -</string>
+    <string name="there_is_nothing_here_yet">There is nothing here yet</string>
+    <string name="the_message_was_not_send">The message was not send</string>
+    <string name="the_message_was_send">The message was send</string>
+    <string name="free_trial_is_ended">Free trial is ended:</string>
+    <string name="buy">Buy</string>
+    <string name="would_you_like_to_purchase_premium_version_of_the_app_to_unlock_the_sound_level_meter">Would you like to purchase premium version of the app to unlock the \"Sound level meter\" ?</string>
+    <string name="to_use_the_sound_level_meter_you_need_to_purchase_a_paid_subscription">To use the sound level meter, you need to purchase a paid subscription</string>
+    <string name="phone_fall">PHONE FALL</string>
+    <string name="status">status:</string>
+    <string name="alert">Alert</string>
+    <string name="error_404">Error 404:</string>
+    <string name="this_page_appears_to_be_unavailable_at_the_moment_try_reconnect_the_page_or_press_back">This page appears to be unavailable at the moment. Try \"Reconnect\" the page or press back</string>
+    <string name="reconnect">Reconnect</string>
+</resources>

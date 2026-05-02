@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.fall.control.ui.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/show_from_right"
+            app:exitAnim="@anim/hide_to_left"
+            app:popEnterAnim="@anim/show_from_left"
+            app:popExitAnim="@anim/hide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fall.control.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"/>
+    <dialog
+        android:id="@+id/firstStartDialog"
+        android:name="com.fall.control.ui.home.first_start_dialog.FirstStartDialog"
+        android:label="dialog_fragment_first_start"
+        tools:layout="@layout/dialog_fragment_first_start" />
+    <dialog
+        android:id="@+id/timerDialog"
+        android:name="com.fall.control.ui.home.timer_dialog.TimerDialog"
+        android:label="dialog_fragment_timer"
+        tools:layout="@layout/dialog_fragment_timer" />
+    <dialog
+        android:id="@+id/xyzInfoDialog"
+        android:name="com.fall.control.ui.home.xyz_info_dialog.XyzInfoDialog"
+        android:label="XyzInfoDialog" />
+    <dialog
+        android:id="@+id/dialogMicrophonePermission"
+        android:name="com.fall.control.ui.home.dialog_microphone_permission.DialogMicrophonePermission"
+        android:label="DialogMicrophonePermission" />
+    <dialog
+        android:id="@+id/buyDialog"
+        android:name="com.fall.control.ui.home.buy_dialog.BuyDialog"
+        android:label="dialog_fragment_buy"
+        tools:layout="@layout/dialog_fragment_buy" />
+    <dialog
+        android:id="@+id/alertDialogFragment"
+        android:name="com.fall.control.ui.home.alert_dialog.AlertDialogFragment"
+        android:label="dialog_fragment_alert"
+        tools:layout="@layout/dialog_fragment_alert" />
+    <dialog
+        android:id="@+id/errorDialog"
+        android:name="com.fall.control.ui.start.error_dialog.ErrorDialog"
+        android:label="ErrorDialog" />
+</navigation>

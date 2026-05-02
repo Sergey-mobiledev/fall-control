@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_nav_graph"
+    app:startDestination="@id/menuHomeFragment">
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.fall.control.ui.menu.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/menuHomeFragment"
+        android:name="com.fall.control.ui.menu.menu_home.MenuHomeFragment"
+        android:label="fragment_menu_home"
+        tools:layout="@layout/fragment_menu_home" >
+        <action
+            android:id="@+id/action_menuHomeFragment_to_infoFragment"
+            app:destination="@id/infoFragment"
+            app:enterAnim="@anim/show_from_right"
+            app:exitAnim="@anim/hide_to_left_long"
+            app:popEnterAnim="@anim/show_from_left_long"
+            app:popExitAnim="@anim/hide_to_right"/>
+        <action
+            android:id="@+id/action_menuHomeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/show_from_right"
+            app:exitAnim="@anim/hide_to_left_long"
+            app:popEnterAnim="@anim/show_from_left_long"
+            app:popExitAnim="@anim/hide_to_right"/>
+        <action
+            android:id="@+id/action_menuHomeFragment_to_historyFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/show_from_right"
+            app:exitAnim="@anim/hide_to_left_long"
+            app:popEnterAnim="@anim/show_from_left_long"
+            app:popExitAnim="@anim/hide_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.fall.control.ui.menu.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.fall.control.ui.menu.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_historyOneFragment"
+            app:destination="@id/historyOneFragment"
+            app:enterAnim="@anim/show_from_right"
+            app:exitAnim="@anim/hide_to_left_long"
+            app:popEnterAnim="@anim/show_from_left_long"
+            app:popExitAnim="@anim/hide_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/historyOneFragment"
+        android:name="com.fall.control.ui.menu.history_1.HistoryOneFragment"
+        android:label="fragment_history_one"
+        tools:layout="@layout/fragment_history_one" />
+</navigation>

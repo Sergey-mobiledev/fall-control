@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberPickerTheme" parent="Base.Theme.FallControl">
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/bungee_spice_regular</item>
+    </style>
+
+    <style name="DialogFragmentTheme">
+        <item name="android:windowBackground">@color/black_50</item>
+<!--        <item name="colorBackgroundFloating">@color/black_50</item>-->
+<!--        <item name="android:colorBackgroundFloating">@color/black_50</item>-->
+    </style>
+
+    <style name="Bungee_spice_regular">
+        <item name="fontFamily">@font/bungee_spice_regular</item>
+    </style>
+
+    <style name="Cera_pro_medium">
+        <item name="fontFamily">@font/cera_pro_medium</item>
+    </style>
+
+    <style name="Cera_pro_black">
+        <item name="fontFamily">@font/cera_pro_black</item>
+    </style>
+
+
+</resources>
